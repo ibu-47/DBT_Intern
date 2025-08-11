@@ -34,4 +34,4 @@ final AS (
     LEFT JOIN customer_orders USING (customer_id)
 )
 SELECT * 
-FROM final;
+FROM final
