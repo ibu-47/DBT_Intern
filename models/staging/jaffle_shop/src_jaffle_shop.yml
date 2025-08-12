@@ -7,6 +7,14 @@ sources:
     tables:
       - name: customers
       -  name: orders
+         freshness: 
+           error_after:
+             count: 3
+             period: day
+           warn_after:
+             count: 1
+             period: day
+         loaded_at_field: _etl_loaded_at
     
 
   
